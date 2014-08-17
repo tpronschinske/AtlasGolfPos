@@ -19,6 +19,10 @@ public class GolfMembership implements MembershipType {
     private Double monthlyFees = 42.50;
     private String membershipType;
 
+    public GolfMembership(String membershipType) {
+        this.membershipType = membershipType;
+    }  
+    
     public Double getSingleAnnualFees() {
         return singleAnnualFees;
     }

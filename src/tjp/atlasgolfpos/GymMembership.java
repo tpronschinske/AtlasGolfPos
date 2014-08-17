@@ -10,10 +10,22 @@ package tjp.atlasgolfpos;
  *
  * @author Travis
  */
-public class GymMembership {
+public class GymMembership implements MembershipType {
     
     private Double annualFees = 89.99;
     private Double monthlyFees = 19.99;
+    private String membershipType = "Gym Membership";
+
+    public GymMembership() {
+    }
+
+    public String getMembershipType() {
+        return membershipType;
+    }
+
+    public void setMembershipType(String membershipType) {
+        this.membershipType = membershipType;
+    }
 
     
     public Double getAnnualFees() {
@@ -31,6 +43,12 @@ public class GymMembership {
     public void setMonthlyFees(Double monthlyFees) {
         this.monthlyFees = monthlyFees;
     }
+
+    @Override
+    public String membershipType(String membershipType) {
+        return membershipType;
+    }
+    
     
     
   
