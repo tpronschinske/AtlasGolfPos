@@ -20,6 +20,7 @@ public class Member {
     private String zip;
     private String emailAddress;
     private String phoneNumber;
+    private int memberID;
 
     public String getFirstName() {
         return firstName;
@@ -84,6 +85,15 @@ public class Member {
     public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
     }
+
+    public int getMemberID() {
+        return memberID;
+    }
+
+    public void setMemberID(int memberID) {
+        this.memberID = memberID;
+    }
+    
     
     
     
